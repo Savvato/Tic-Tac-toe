@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="savvato.tic_tac_toe.MainActivity">
+
+    <Button
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:text="Начать новую игру"
+        android:id="@+id/startButton"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/accent_material_light"
+        android:textColor="@color/background_floating_material_light"
+        android:layout_marginBottom="40dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                >
+                <ImageView
+                    android:id="@+id/image11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cross"
+                    android:baselineAlignBottom="false"
+                    android:nestedScrollingEnabled="false"
+                    android:adjustViewBounds="true"/>
+                <ImageView
+                    android:id="@+id/image21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cross"
+                    android:adjustViewBounds="true"/>
+                <ImageView
+                    android:id="@+id/image31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cross"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/toe"
+                    android:adjustViewBounds="true"/>
+                <ImageView
+                    android:id="@+id/image22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:src="@drawable/toe"
+                    android:adjustViewBounds="true"/>
+                <ImageView
+                    android:id="@+id/image32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:src="@drawable/toe"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cross"
+                    android:adjustViewBounds="true"/>
+                <ImageView
+                    android:id="@+id/image23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cross"
+                    android:adjustViewBounds="true"/>
+                <ImageView
+                    android:id="@+id/image33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cross"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
